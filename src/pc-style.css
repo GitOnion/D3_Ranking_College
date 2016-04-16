@@ -75,11 +75,22 @@ button:hover{
   stroke: red;
 }
 
-.year_button {
-  width: 400px;
-  margin-left: 570px;
-  display: block;
+.pcc{
+  /*margin-left: auto;
+  margin-right: auto;*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
+.year_button {
+  /*width: 400px;
+  margin-left: 570px;*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .brush .extent {
   fill-opacity: .3;
   stroke: #fff;
@@ -125,11 +136,13 @@ button:hover{
   background-color: white;
 }
 
-svg+div {
-  margin-left: 300px;
+.pcc+div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: white;
 }
-svg+div>div {
+.pcc+div>div {
   display: inline-block;
   min-width: 50px;
   min-height: 1em;

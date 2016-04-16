@@ -25,6 +25,7 @@
     the years, so you can compare how each country's top universities compare with each other generally.
   </p>
   <h1>Parallel Coordinates Chart</h1>
+  <p> Drag along the axis to select certain ranges of values.</p>
   <p> Click on buttons to change the year of data shown.</p>
   <p> The average score of schools in each country from 2011 - 2016 will display</p><br /><br />
 
@@ -35,6 +36,15 @@
     <button type="button" id="2014">2014</button>
     <button type="button" id="2015">2015</button>
     <button type="button" id="2016">2016</button>
+  </div><br /><br />
+  <div class="pcc"></div>
+  <div>
+    <div style="background-color:orange"></div><div>North America</div>
+    <div style="background-color:lime"></div><div>South America</div>
+    <div style="background-color:skyblue"></div><div>Europe</div>
+    <div style="background-color:yellow"></div><div>Africa</div>
+    <div style="background-color:red"></div><div>Asia</div>
+    <div style="background-color:purple"></div><div>Oceania</div>
   </div><br /><br />
 
   <script>
@@ -56,7 +66,7 @@
       background,
       foreground;
 
-    var svg1 = d3.select("body").append("svg")
+    var svg1 = d3.select(".pcc").append("svg")
       .attr("width", width + margin.left + margin.right)
       .attr("height", height + margin.top + margin.bottom)
       .append("g").attr('class', 'pc')
@@ -274,14 +284,6 @@
       });
     }
   </script>
-  <div>
-    <div style="background-color:orange"></div><div>North America</div>
-    <div style="background-color:lime"></div><div>South America</div>
-    <div style="background-color:skyblue"></div><div>Europe</div>
-    <div style="background-color:yellow"></div><div>Africa</div>
-    <div style="background-color:red"></div><div>Asia</div>
-    <div style="background-color:purple"></div><div>Oceania</div>
-  </div><br /><br />
   <h1>Radar Chart</h1>
   <p> Click on buttons to add country onto the Radar Chart.</p>
   <p> The average score of schools in each country from 2011 - 2016 will display</p>
